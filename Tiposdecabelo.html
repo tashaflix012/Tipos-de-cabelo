@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidados com o Cabelo</title>
+    <style>
+        /* Resetando margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Corpo e fundo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f0f8ff; /* Cor suave de fundo */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho com gradiente e animação */
+        header {
+            background: linear-gradient(135deg, #FF4081, #FF80AB); /* Gradiente chamativo */
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Título grande e animado */
+        header h1 {
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        /* Subtítulo */
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            letter-spacing: 1px;
+            animation: slideInRight 1.5s ease-out;
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        /* Menu de navegação */
+        nav {
+            background-color: #3f51b5;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.1em;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FF4081;
+            transform: scale(1.1);
+        }
+
+        /* Conteúdo principal */
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .section-title {
+            font-size: 2.5em;
+            color: #FF4081;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-bottom: 4px solid #FF80AB;
+            padding-bottom: 10px;
+            animation: bounce 1s ease-out infinite alternate;
+        }
+
+        /* Efeito de animação de bounce para as seções */
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
+        .content p, .content ul li {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Lista de produtos com bordas e animação */
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Rodapé */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsividade para dispositivos móveis */
+        @media (max-width: 768px) {
+            .product-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cuidados com o Cabelo</h1>
+    <p>Transforme seu cabelo com as melhores dicas e produtos</p>
+</header>
+
+<nav>
+    <a href="#dicas">Dicas</a>
+    <a href="#tipos">Tipos de Cabelo</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="content">
+    <section id="dicas">
+        <h2 class="section-title">Dicas para Cabelos Saudáveis</h2>
+        <p>Manter o cabelo saudável exige dedicação e cuidados especiais. Aqui estão algumas dicas essenciais:</p>
+        <ul>
+            <li><strong>Hidratação é Fundamental:</strong> Aplique máscaras e óleos hidratantes para manter seus fios macios e brilhantes.</li>
+            <li><strong>Evite o Uso Excessivo de Calor:</strong> O uso frequente de chapinhas e secadores pode danificar os fios. Use-os com moderação e sempre com um protetor térmico.</li>
+            <li><strong>Corte Regularmente:</strong> Cortes a cada 2 ou 3 meses ajudam a eliminar pontas duplas e estimulam o crescimento saudável.</li>
+            <li><strong>Lave o Cabelo Corretamente:</strong> Evite água quente e opte por produtos específicos para o seu tipo de cabelo.</li>
+            <li><strong>Proteja seus Fios do Sol:</strong> O sol pode ressecar os cabelos. Use chapéus ou produtos com proteção UV.</li>
+        </ul>
+    </section>
+
+    <section id="tipos">
+        <h2 class="section-title">Tipos de Cabelo</h2>
+        <p>Cada tipo de cabelo precisa de cuidados diferentes. Conheça os principais tipos:</p>
+        <ul>
+            <li><strong>Cabelo Liso:</strong> Fios mais finos e oleosos. Evite produtos pesados e use shampoos e condicionadores leves.</li>
+            <li><strong>Cabelo Cacheado:</strong> Requer hidratação intensa. Use cremes para definir os cachos e reduzir o frizz.</li>
+            <li><strong>Cabelo Crespo:</strong> Fios grossos e frágeis. Invista em nutrição profunda e produtos que ajudem a manter a umidade nos fios.</li>
+            <li><strong>Cabelo Ondulado:</strong> Um mix entre o liso e o cacheado, exigindo cuidados balanceados. Use produtos que definem ondas sem pesar.</li>
+        </ul>
+    </section>
+
+    <section id="produtos">
+        <h2 class="section-title">Produtos Recomendados</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/280x200?text=Shampoo" alt="Shampoo Hidratante">
+                <h3>Shampoo Hidratante</h3>
+                <p>Perfeito para hidratar e manter os fios saudáveis. Indicado para todos os tipos de cabelo.</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/280x200?text=Máscara+Capilar" alt="Máscara Capilar">
+                <h3>Máscara Capilar</h3>
+                <p>Hidratação profunda para cabelos secos e danificados. Ideal para cabelos cacheados e
